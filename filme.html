@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Cadastrar Filme</title>
 </head>
 <body>
@@ -20,31 +24,36 @@
             <img src="imagens/right-arrow-48.png" alt="">
         </a>
     </nav><!--fim navegação-->
-    <div class="form-filme">
-        <label for="titulo-filme"><b>Título:</b></label>
-        <input type="text" name="titulo-filme" id="titulo-filme"><br><br>
-        <label for="genero-filme"><b>Gênero:</b></label>
-        <select name="genero-filme" id="genero-filme">
-            <option value="genero-acao">Ação</option>
-            <option value="genero-comedia">Comédia</option>
-            <option value="genero-documentario">Documentário</option>
-            <option value="genero-drama">Drama</option>
-            <option value="genero-aventura">Aventura</option>
-        </select><br>
-        <p><b>Premiações:</b></p>
-        <input type="checkbox" name="grammy" id="grammy">
-        <label for="grammy">Grammy</label><br>
-        <input type="checkbox" name="globo-ouro" id="globo-ouro">
-        <label for="globo-ouro">Globo de Ouro</label><br>
-        <input type="checkbox" name="oscar" id="oscar">
-        <label for="oscar">Oscar</label><br>
-        <input type="checkbox" name="mtv-awards" id="mtv-awards">
-        <label for="mtv-awards">MTV Movie Awards</label><br>
-        <input type="checkbox" name="independent-awards" id="independent-awards">
-        <label for="independent-awards">Independent Spirit Awards</label><br><br>
-        <label for="descricao-filme"><b>Descrição:</b></label>
-        <textarea name="descricao-filme" id="descricao-filme" cols="20" rows="5"></textarea><br><br>
-        <button>Cadastrar</button>
+    <div class="container">
+        <div class="form-filme">
+            <label for="titulo-filme"><b>Título:</b></label>
+            <input type="text" name="titulo-filme" id="titulo-filme"><br><br>
+            <label for="genero-filme"><b>Gênero:</b></label>
+            <select name="genero-filme" id="genero-filme">
+                <option value="genero-acao">Ação</option>
+                <option value="genero-comedia">Comédia</option>
+                <option value="genero-documentario">Documentário</option>
+                <option value="genero-drama">Drama</option>
+                <option value="genero-aventura">Aventura</option>
+            </select><br>
+            <p><b>Premiações:</b></p>
+            <div class="premiacoes">
+                <input type="checkbox" name="grammy" id="grammy">
+                <label for="grammy">Grammy</label><br>
+                <input type="checkbox" name="globo-ouro" id="globo-ouro">
+                <label for="globo-ouro">Globo de Ouro</label><br>
+                <input type="checkbox" name="oscar" id="oscar">
+                <label for="oscar">Oscar</label><br>
+                <input type="checkbox" name="mtv-awards" id="mtv-awards">
+                <label for="mtv-awards">MTV Movie Awards</label><br>
+                <input type="checkbox" name="independent-awards" id="independent-awards">
+                <label for="independent-awards">Independent Spirit Awards</label><br><br>
+            </div>
+            <label for="descricao-filme"><b>Descrição:</b></label>
+            <textarea name="descricao-filme" id="descricao-filme" cols="20" rows="5"></textarea><br><br>
+            <button id="cadastrar-btn">Cadastrar</button>
+        </div>
     </div>
+    
 </body>
 </html>

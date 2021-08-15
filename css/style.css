@@ -85,8 +85,20 @@ nav {
     height: 30px;
     line-height: 30px;
     text-align: center;
+    font-size: 20px;
 }
 
 .navegacao a:hover {
     background-color: #1D3557;
+}
+.lista-filmes {
+    text-align: center;
+}
+
+.lista-filmes a img{
+    margin: auto 70px;
+}
+
+img:hover {
+    box-shadow: rgb(0 0 0 / 50%) 10px 10px 40px 20px;
 }
