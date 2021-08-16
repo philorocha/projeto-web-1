@@ -170,11 +170,21 @@ header a h1 {
     background-color: #457B9D;
 }
 
-.container-detalhes {
+.container-detalhes, .container-sobre {
     width: 560px;
     margin: auto;
 }
 
-.container-detalhes h1, .container-detalhes p, .container-detalhes p b, .container-detalhes p a{
+.container-detalhes h1, .container-sobre h1, .container-detalhes p, .container-detalhes p b, .container-detalhes p a{
     color: #1D3557;
+}
+
+.container-sobre p {
+    font-size: 20px;
+    color: #1D3557;
+    margin: 20px 0px;
+}
+
+.container-sobre h1, .container-sobre p {
+    text-align: center;
 }
