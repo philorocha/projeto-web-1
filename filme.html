@@ -6,28 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap" rel="stylesheet">
     <title>Cadastrar Filme</title>
 </head>
 <body>
     <header><!--Início Cabeçalho-->
         <a href="principal.html">
-            <img src="imagens/logo.png" alt="Web Locadora">
+            <!--<img src="imagens/film.png">-->
+            <h1>Web Locadora</h1>
         </a>
     </header><!--Fim Cabeçalho-->
-    <nav><!--inicio navegação-->
-        <a href="cadastros.html">
-            <img src="imagens/left-arrow-48.png" alt="">
+    <nav id="navegacao"><!--inicio navegação-->
+        <a href="cadastros.html" id="voltar">
+            Voltar
         </a>
-        <a href="#">
-            <img src="imagens/right-arrow-48.png" alt="">
+        <a href="#" id="proximo">
+            Próximo
         </a>
     </nav><!--fim navegação-->
     <div class="container">
         <div class="form-filme">
             <label for="titulo-filme"><b>Título:</b></label>
-            <input type="text" name="titulo-filme" id="titulo-filme"><br><br>
+            <input type="text" name="titulo-filme" id="titulo-filme"><br>
             <label for="genero-filme"><b>Gênero:</b></label>
             <select name="genero-filme" id="genero-filme">
                 <option value="genero-acao">Ação</option>
@@ -35,23 +39,23 @@
                 <option value="genero-documentario">Documentário</option>
                 <option value="genero-drama">Drama</option>
                 <option value="genero-aventura">Aventura</option>
-            </select><br>
+            </select>
             <p><b>Premiações:</b></p>
             <div class="premiacoes">
                 <input type="checkbox" name="grammy" id="grammy">
-                <label for="grammy">Grammy</label><br>
+                <label for="grammy">Grammy</label>
                 <input type="checkbox" name="globo-ouro" id="globo-ouro">
-                <label for="globo-ouro">Globo de Ouro</label><br>
+                <label for="globo-ouro">Globo de Ouro</label>
                 <input type="checkbox" name="oscar" id="oscar">
-                <label for="oscar">Oscar</label><br>
+                <label for="oscar">Oscar</label>
                 <input type="checkbox" name="mtv-awards" id="mtv-awards">
-                <label for="mtv-awards">MTV Movie Awards</label><br>
+                <label for="mtv-awards">MTV Movie Awards</label>
                 <input type="checkbox" name="independent-awards" id="independent-awards">
-                <label for="independent-awards">Independent Spirit Awards</label><br><br>
+                <label for="independent-awards">Independent Spirit Awards</label>
             </div>
             <label for="descricao-filme"><b>Descrição:</b></label>
-            <textarea name="descricao-filme" id="descricao-filme" cols="20" rows="5"></textarea><br><br>
-            <button id="cadastrar-btn">Cadastrar</button>
+            <textarea name="descricao-filme" id="descricao-filme" cols="20" rows="5"></textarea>
+            <button class="cadastrar-btn">Cadastrar</button>
         </div>
     </div>
     
